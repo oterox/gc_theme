@@ -30,9 +30,9 @@ module.exports = function(grunt) {
         }
     },
     uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%=grunt.template.today("dd-mm-yyyy H:MM") %> */\n'
-      },
+      //options: {
+        //banner: '/*! <%= pkg.name %> <%=grunt.template.today("dd-mm-yyyy H:MM") %> */\n'
+      //},
       dist: {
         files: {
           '<%=jsDistDir%><%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
@@ -41,9 +41,9 @@ module.exports = function(grunt) {
     },
     cssmin: {
       add_banner: {
-        options: {
-          banner: '/*! <%= pkg.name %> <%=grunt.template.today("dd-mm-yyyy H:MM") %> */\n'
-        },
+        //options: {
+        //  banner: '/*! <%= pkg.name %> <%=grunt.template.today("dd-mm-yyyy H:MM") %> */\n'
+        //},
         files: {
           '<%=cssDistDir%><%= pkg.name %>.min.css': ['<%= concat.css.dest %>']
         }
