@@ -6,6 +6,9 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+<header>
+<h1>HEADER</h1>
+</header>
 <?php
 if ( have_posts() ) {
     while ( have_posts() ) {

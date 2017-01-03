@@ -19,6 +19,7 @@ function ox_init(){
 }
 function theme_name_scripts() {
     wp_enqueue_style( 'style-main', get_stylesheet_uri() );
+    wp_enqueue_style( 'reset', get_template_directory_uri() . '/assets/dist/css/reset.min.css' );
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/dist/css/grillcode.min.css' );
 }
 
